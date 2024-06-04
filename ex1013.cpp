@@ -8,7 +8,7 @@ int abs(double x){
         return x;
 }   
 
-int Cu(double a, double b){
+int Max(double a, double b){
 
     double maior = (a+b+abs(a-b))/2;
 
@@ -19,7 +19,7 @@ int main(){
     int a,b,c;
 
     cin >> a >> b >> c;
-    cout << Cu(Cu(a,b),c) << " eh o maior" <<endl;
+    cout << Max(Max(a,b),c) << " eh o maior" <<endl;
 
     return 0;
 }
